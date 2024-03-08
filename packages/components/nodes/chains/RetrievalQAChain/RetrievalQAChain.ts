@@ -62,7 +62,7 @@ class RetrievalQAChain_Chains implements INode {
         const moderations = nodeData.inputs?.inputModeration as Moderation[]
         if (moderations && moderations.length > 0) {
             try {
-                // Use the output of the moderation chain as input for the LLM chain
+                // Use the output of the moderation chain as input for the Retrieval QA Chain
                 input = await checkInputs(moderations, input)
             } catch (e) {
                 await new Promise((resolve) => setTimeout(resolve, 500))
