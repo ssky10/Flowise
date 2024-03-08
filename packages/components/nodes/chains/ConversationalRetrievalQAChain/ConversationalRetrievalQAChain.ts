@@ -184,7 +184,7 @@ class ConversationalRetrievalQAChain_Chains implements INode {
 
         if (moderations && moderations.length > 0) {
             try {
-                // Use the output of the moderation chain as input for the LLM chain
+                // Use the output of the moderation chain as input for the Conversational Retrieval QA Chain
                 input = await checkInputs(moderations, input)
             } catch (e) {
                 await new Promise((resolve) => setTimeout(resolve, 500))
