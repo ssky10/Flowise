@@ -190,7 +190,7 @@
                         "type": "Moderation",
                         "optional": true,
                         "list": true,
-                        "id": "conversationChain_0-input-inputModeration-Moderation"
+                        "id": "retrievalQAChain_0-input-inputModeration-Moderation"
                     }
                 ],
                 "inputs": {
@@ -255,7 +255,7 @@
                         "type": "Moderation",
                         "optional": true,
                         "list": true,
-                        "id": "conversationChain_0-input-inputModeration-Moderation"
+                        "id": "retrievalQAChain_1-input-inputModeration-Moderation"
                     }
                 ],
                 "inputs": {
