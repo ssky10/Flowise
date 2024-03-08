@@ -117,7 +117,7 @@
                         "type": "Moderation",
                         "optional": true,
                         "list": true,
-                        "id": "conversationChain_0-input-inputModeration-Moderation"
+                        "id": "multiRetrievalQAChain_0-input-inputModeration-Moderation"
                     }
                 ],
                 "inputs": {
