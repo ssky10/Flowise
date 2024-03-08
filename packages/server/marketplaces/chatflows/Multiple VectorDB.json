@@ -163,7 +163,7 @@
             "data": {
                 "id": "retrievalQAChain_0",
                 "label": "Retrieval QA Chain",
-                "version": 1,
+                "version": 2,
                 "name": "retrievalQAChain",
                 "type": "RetrievalQAChain",
                 "baseClasses": ["RetrievalQAChain", "BaseChain", "BaseLangChain"],
@@ -182,9 +182,19 @@
                         "name": "vectorStoreRetriever",
                         "type": "BaseRetriever",
                         "id": "retrievalQAChain_0-input-vectorStoreRetriever-BaseRetriever"
+                    },
+                    {
+                        "label": "Input Moderation",
+                        "description": "Detect text that could generate harmful output and prevent it from being sent to the language model",
+                        "name": "inputModeration",
+                        "type": "Moderation",
+                        "optional": true,
+                        "list": true,
+                        "id": "conversationChain_0-input-inputModeration-Moderation"
                     }
                 ],
                 "inputs": {
+                    "inputModeration": "",
                     "model": "{{chatOpenAI_0.data.instance}}",
                     "vectorStoreRetriever": "{{redis_0.data.instance}}"
                 },
@@ -218,7 +228,7 @@
             "data": {
                 "id": "retrievalQAChain_1",
                 "label": "Retrieval QA Chain",
-                "version": 1,
+                "version": 2,
                 "name": "retrievalQAChain",
                 "type": "RetrievalQAChain",
                 "baseClasses": ["RetrievalQAChain", "BaseChain", "BaseLangChain"],
@@ -237,9 +247,19 @@
                         "name": "vectorStoreRetriever",
                         "type": "BaseRetriever",
                         "id": "retrievalQAChain_1-input-vectorStoreRetriever-BaseRetriever"
+                    },
+                    {
+                        "label": "Input Moderation",
+                        "description": "Detect text that could generate harmful output and prevent it from being sent to the language model",
+                        "name": "inputModeration",
+                        "type": "Moderation",
+                        "optional": true,
+                        "list": true,
+                        "id": "conversationChain_0-input-inputModeration-Moderation"
                     }
                 ],
                 "inputs": {
+                    "inputModeration": "",
                     "model": "{{chatOpenAI_1.data.instance}}",
                     "vectorStoreRetriever": "{{faiss_0.data.instance}}"
                 },
