@@ -355,7 +355,7 @@
                         "type": "Moderation",
                         "optional": true,
                         "list": true,
-                        "id": "conversationChain_0-input-inputModeration-Moderation"
+                        "id": "sqlDatabaseChain_0-input-inputModeration-Moderation"
                     }
                 ],
                 "inputs": {
