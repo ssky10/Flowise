@@ -61,7 +61,7 @@
                         "type": "Moderation",
                         "optional": true,
                         "list": true,
-                        "id": "conversationChain_0-input-inputModeration-Moderation"
+                        "id": "openApiChain_1-input-inputModeration-Moderation"
                     }
                 ],
                 "inputs": {
