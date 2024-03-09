@@ -82,7 +82,7 @@
                         "type": "Moderation",
                         "optional": true,
                         "list": true,
-                        "id": "conversationChain_0-input-inputModeration-Moderation"
+                        "id": "conversationalRetrievalQAChain_0-input-inputModeration-Moderation"
                     }
                 ],
                 "inputs": {
